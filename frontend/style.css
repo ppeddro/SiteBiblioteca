@@ -21,11 +21,22 @@ header {
   box-sizing: border-box;
 }
 
+/* Logo */
+.logo {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
 .logo img {
   height: 90px;
   width: auto;
   object-fit: contain;
 }
+/* Fim logo */
 
 /* Barra de pesquisa */
 .search-container {
