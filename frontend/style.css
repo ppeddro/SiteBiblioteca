@@ -13,7 +13,7 @@ body {
 
 header {
   padding: 80px;
-  background-color: #49853e;
+  background-color: #202f60;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,15 +42,16 @@ header {
 .search-container {
   display: flex;
   align-items: center;
-  background-color: #A3C9A8;
+  background-color: #3c497c;
   border-radius: 15px;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
 }
 
 .search-input {
   border: none;
   background: transparent;
-  color: #000;
+  color: #f3eded;
   font-size: 1rem;
   outline: none;
   margin-left: 0.5rem;
@@ -64,18 +65,32 @@ header {
 }
 
 .lupa {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 /* Fim barra de pesquisa */
+
+/* Botão favoritos */
+.favoritos {
+  margin-left: 80rem;
+  cursor: pointer;
+}
+
+.favoritos img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s;
+}
 
 /* Botão de login e modal */
 .login {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #000;
+  color: #eee5e5;
   cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 /* Fundo escurecido do modal */
@@ -141,5 +156,5 @@ header {
 
 
 .user-icon {
-  height: 35px;
+  height: 55px;
 }

@@ -4,6 +4,14 @@ Registro de mudanças e implementações feitas no projeto Biblioteca Virtual.
 
 ---
 
+## 📅 29/05/2025
+
+### 🎨 Mudanças header
+- Adicionado botão de favoritos.
+- Mudança de cores no header.
+- Mudança cores de alguns itens.
+---
+
 ## 📅 21/05/2025
 
 ### 🔗 Redirecionamento para UEG Estudante
