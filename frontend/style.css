@@ -153,8 +153,46 @@ header {
 }
 /* Fim modal */
 
-
-
 .user-icon {
   height: 55px;
+}
+
+/* Card do livro */
+.livro-card {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre imagem e texto */
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin: 40px;
+  transition: transform 0.2s ease;
+  align-items: flex-start;
+}
+
+.livro-card:hover {
+  transform: scale(1.05);
+}
+
+.livro-card img {
+  width: 180px;
+  border-radius: 5px;
+}
+
+.livro-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.livro-card h2 {
+  color: black;
+  margin: 0;
+}
+
+.livro-card p {
+  color: black;
+  margin: 5px 0 0 0;
 }
