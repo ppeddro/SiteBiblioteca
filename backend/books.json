@@ -1,0 +1,18 @@
+[
+  {
+    "titulo": "Dom Casmurro",
+    "autor": "Machado de Assis",
+    "ano": 1899,
+    "sinopse": "Um clássico da literatura brasileira que explora a dúvida e o ciúme.",
+    "imagem": "dom_casmurro.jpg",
+    "likes": 0
+  },
+  {
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "ano": 1949,
+    "sinopse": "Uma distopia sobre vigilância e totalitarismo.",
+    "imagem": "1984.jpg",
+    "likes": 0
+  }
+]

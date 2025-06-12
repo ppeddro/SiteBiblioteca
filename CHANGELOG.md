@@ -2,6 +2,15 @@
 
 Registro de mudanças e implementações feitas no projeto Biblioteca Virtual.
 
+## 📅 30/06/2025
+
+### 🎨 Adicinado Card dos Livros
+- Refatoração completa do layout do card.
+- Alterado o posicionamento do título e do autor (agora ficam ao lado da capa).
+- Centralização removida e alinhamento ajustado para ficar no topo do card.
+- Aumento do tamanho do card para melhorar a leitura e a estética.
+- Correção no comportamento do hover, mantendo a escalabilidade suave.
+
 ---
 
 ## 📅 29/05/2025
@@ -10,6 +19,7 @@ Registro de mudanças e implementações feitas no projeto Biblioteca Virtual.
 - Adicionado botão de favoritos.
 - Mudança de cores no header.
 - Mudança cores de alguns itens.
+
 ---
 
 ## 📅 21/05/2025

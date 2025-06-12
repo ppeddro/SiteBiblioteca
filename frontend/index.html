@@ -30,7 +30,7 @@
     </a>
   </div>
 
-    <!-- Botão do Login --> 
+    <!-- Botão do Login -->
     <div class="login" onclick="abrirModal()">
       <img src="img\user.png" alt="Ícone de usuário" class="user-icon">
       <span>Login</span>
@@ -52,16 +52,42 @@
       </div>
     </div>
 
-    <!-- Card do Livro -->
-    <div class="livro-card">
-      <img src="img\pequeno-principe.png" alt="Capa do Livro">
-      <div class="livro-info">
-        <h2>O Pequeno Príncipe</h2>
-        <p>Antoine de Saint-Exupéry</p>
-      </div>
-    </div>
+  <!-- Aqui os livros aparecerão -->
+  <div id="livros-container" class="livros-grid"></div>
   </main>
 
   <script src="script.js"></script>
+
+  <script>
+    async function carregarLivros() {
+      try {
+        const resposta = await fetch('http://localhost:3000/api/books');
+        const livros = await resposta.json();
+
+        const container = document.getElementById('livros-container');
+        container.innerHTML = '';
+
+        livros.forEach(livro => {
+          const livroDiv = document.createElement('div');
+          livroDiv.classList.add('livro');
+
+          livroDiv.innerHTML = `
+            <img src="${livro.imagem}" alt="Capa de ${livro.titulo}">
+            <h3>${livro.titulo}</h3>
+            <p><strong>Autor:</strong> ${livro.autor}</p>
+            <p>${livro.resumo}</p>
+          `;
+
+          container.appendChild(livroDiv);
+        });
+      } catch (erro) {
+        console.error('Erro ao carregar livros:', erro);
+      }
+    }
+
+    window.onload = carregarLivros;
+  </script>
+
+
 </body>
 </html>
